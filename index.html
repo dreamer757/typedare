@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>TYPE DARE — Retro typing challenge</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="wrap">
+<section class="shell" aria-label="Type Dare typing challenge"><div class="inside">
+<div class="topline"><span>TD-94 / COMPUTER LAB</span><span class="status"><span class="dot" aria-hidden="true"></span> SYSTEM READY</span></div>
+<header class="hero"><div class="eyebrow">Welcome! Practice your typing. Old school style.</div><h1>TYPE<span>DARE</span><span class="cursor" aria-hidden="true"></span></h1><p class="tagline">A retro typing challenge. Choose Classic or take a Dare.</p></header>
+<div class="mode-picker" aria-label="Choose game mode"><button type="button" class="mode-choice selected" id="classicChoice" aria-pressed="true">CLASSIC MODE</button><button type="button" class="mode-choice" id="dareChoice" aria-pressed="false">DARE MODE</button></div><div class="dare-picker" id="darePicker" hidden><label for="dareSelect">&gt; SELECT YOUR DARE</label><select id="dareSelect"><option value="no-backspace">NO BACKSPACE — No corrections</option><option value="sudden-death">SUDDEN DEATH — One typo ends the run</option><option value="speed-rush">SPEED RUSH — 35 WPM / 90% accuracy</option></select><p class="hint" id="dareHint">Mistakes stay. Complete the round for a badge.</p><p class="hint" id="dareStreak">DARE STREAK: 0 · BADGES: 0/3</p></div><section class="badge-collection" id="badgeCollection" hidden aria-label="Your dare badges"><div class="badge-collection-title">&gt; YOUR DARE BADGES <span id="badgeCount">0 / 3 UNLOCKED</span></div><div class="badge-grid">
+<div class="dare-medal" data-badge="no-backspace"><span class="medal-icon" aria-hidden="true">⌫</span><span class="medal-name">NO BACKSPACE</span><span class="medal-state">LOCKED</span></div>
+<div class="dare-medal" data-badge="sudden-death"><span class="medal-icon" aria-hidden="true">!</span><span class="medal-name">SUDDEN DEATH</span><span class="medal-state">LOCKED</span></div>
+<div class="dare-medal" data-badge="speed-rush"><span class="medal-icon" aria-hidden="true">⚡</span><span class="medal-name">SPEED RUSH</span><span class="medal-state">LOCKED</span></div>
+</div></section><div class="stats" aria-label="Typing statistics"><div class="stat"><label for="time">TIME LEFT</label><strong id="time">60</strong><small> sec</small></div><div class="stat"><label for="wpm">SPEED</label><strong id="wpm">0</strong><small> WPM</small></div><div class="stat"><label for="accuracy">ACCURACY</label><strong id="accuracy">100</strong><small> %</small></div></div>
+<section class="module" aria-label="Typing exercise"><div class="module-header"><span><span id="exerciseLabel">EXERCISE 001 / CLASSIC</span></span><span class="badge" id="mode">60-SECOND TEST</span></div><p class="passage" id="passage" aria-label="Text to type"></p><label class="entry-label" for="typing">&gt; TYPE THE TEXT ABOVE</label><textarea id="typing" class="typing" spellcheck="false" autocomplete="off" autocapitalize="off" autocorrect="off" placeholder="Click here and start typing to begin..." aria-describedby="instructions"></textarea><p id="instructions" class="hint">The clock starts with your first keystroke. Type as much as you can in 60 seconds.</p><div class="actions"><button id="retry" class="primary" type="button">↻ NEW TEST</button><button id="focus" class="secondary" type="button">▶ START TYPING</button><span class="hint" id="best">PERSONAL BEST: —</span></div><div class="result" id="result" role="status" aria-live="polite"><h2 id="resultTitle">TEST COMPLETE_</h2><p id="resultCopy"></p><div class="earned-badge" id="earnedBadge" hidden><span class="medal-icon" id="earnedBadgeSymbol" aria-hidden="true">★</span><div><strong id="earnedBadgeTitle">BADGE UNLOCKED</strong><span>Saved to your Dare Badge collection</span></div></div><div class="certificate-section" id="certificateSection" hidden>
+<div class="certificate-label">&gt; YOUR OFFICIAL TYPE DARE SCORECARD</div>
+<img id="certificatePreview" class="certificate-preview" alt="Retro green-and-black typing score certificate showing your test results" />
+<div class="certificate-actions"><button id="saveCertificate" class="primary" type="button">↓ SAVE CERTIFICATE</button><button id="shareCertificate" class="secondary" type="button">↗ SHARE SCORE</button></div>
+<p class="certificate-note" id="shareNotice" aria-live="polite">Save your scorecard as a PNG image or share it with friends.</p>
+</div></div></section>
+<footer class="footer"><span>EST. 1994 <span aria-hidden="true">//</span> REIMAGINED FOR TODAY</span><span>STATUS: <strong id="status">AWAITING INPUT</strong></span></footer>
+</div></section><p class="below">Built for the love of old computers and a good keyboard. <span aria-hidden="true">✳</span></p>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
